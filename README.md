@@ -85,14 +85,18 @@ though the code here is Apache-2.0. See [NOTICE](NOTICE).
 
 ## Installation
 
-Follow [docs/install.md](docs/install.md) for the base environment (PyTorch 1.10.1 + cu113,
-mmcv 1.4.0, mmdet 2.14.0, mmdet3d 0.17.1, pytorch-lightning). In addition:
+The environment follows [docs/install.md](docs/install.md) (Python 3.7, PyTorch 1.10.1 + cu113,
+mmcv 1.4.0, mmdet 2.14.0, mmdet3d 0.17.1, pytorch-lightning 1.7.0). Three items are fetched
+separately and are not carried in this repository:
 
-1. Clone [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) into
-   `packages/Depth-Anything-V2`, or set the `DAV2_ROOT` environment variable, and download the
-   ViT-L depth checkpoint.
-2. Place `swin_tiny_patch4_window7_224.pth` and the released `CGFormer-SemanticKITTI.ckpt` under
-   `ckpts/`. Both come from the [CGFormer](https://github.com/pkqbajng/CGFormer) release.
+1. `packages/`, which holds the mmdetection3d 0.17.1 and DFA3D sources that step (c) of
+   `install.md` builds. Copy it from the [CGFormer](https://github.com/pkqbajng/CGFormer)
+   repository.
+2. [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2), cloned into
+   `packages/Depth-Anything-V2` or pointed to by the `DAV2_ROOT` environment variable, together
+   with its ViT-L depth checkpoint.
+3. `swin_tiny_patch4_window7_224.pth` and the released `CGFormer-SemanticKITTI.ckpt`, placed
+   under `ckpts/`. Both come from the CGFormer release.
 
 ## Data preparation
 
