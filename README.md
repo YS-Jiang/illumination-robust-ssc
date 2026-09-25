@@ -78,10 +78,10 @@ last.ckpt   2351192359 bytes
 sha256      e5c3256e415780026dbb435e6a85e6c18a6dfce63900b4920b8d34379914c561
 ```
 
-This is the checkpoint submitted to the test server, taken at the end of training rather than at
-the best validation score. It contains the frozen Depth-Anything-V2 ViT-L parameters, which are
-released by their authors under CC-BY-NC-4.0, so the checkpoint carries that restriction even
-though the code here is Apache-2.0. See [NOTICE](NOTICE).
+This is the checkpoint submitted to the test server. It contains the frozen
+Depth-Anything-V2 ViT-L parameters, which are released by their authors under
+CC-BY-NC-4.0, so the checkpoint carries that restriction even though the code
+here is Apache-2.0. See NOTICE.
 
 ## Installation
 
