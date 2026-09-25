@@ -2,7 +2,7 @@
 
 > Illumination-Robust Stereo Semantic Occupancy for Autonomous Driving via Cross-Modal Fusion
 >
-> > Yansong Jiang, [Dezong Zhao](https://sites.google.com/site/zhaodezong), Li Zhang
+> > Yansong Jiang, Dezong Zhao, Li Zhang
 
 ## News
 
