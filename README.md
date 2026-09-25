@@ -78,16 +78,15 @@ last.ckpt   2351192359 bytes
 sha256      e5c3256e415780026dbb435e6a85e6c18a6dfce63900b4920b8d34379914c561
 ```
 
-This is the checkpoint submitted to the test server. It contains the frozen
-Depth-Anything-V2 ViT-L parameters, which are released by their authors under
-CC-BY-NC-4.0, so the checkpoint carries that restriction even though the code
-here is Apache-2.0. See NOTICE.
+This is the checkpoint submitted to the test server. It embeds the frozen Depth-Anything-V2
+ViT-L parameters, so the checkpoint is distributed under CC-BY-NC-4.0 while the code is
+Apache-2.0. See [NOTICE](NOTICE).
 
 ## Installation
 
 The environment follows [docs/install.md](docs/install.md) (Python 3.7, PyTorch 1.10.1 + cu113,
 mmcv 1.4.0, mmdet 2.14.0, mmdet3d 0.17.1, pytorch-lightning 1.7.0). Three items are fetched
-separately and are not carried in this repository:
+separately:
 
 1. `packages/`, which holds the mmdetection3d 0.17.1 and DFA3D sources that step (c) of
    `install.md` builds. Copy it from the [CGFormer](https://github.com/pkqbajng/CGFormer)
@@ -104,7 +103,7 @@ separately and are not carried in this repository:
    (`image_2`, `image_3`) and the **grayscale** pair (`image_0`, `image_1`) are needed. The layout
    is described in [docs/dataset.md](docs/dataset.md).
 
-2. Generate stereo depth for each pair with MobileStereoNet. The weights are not shipped here, see
+2. Generate stereo depth for each pair with MobileStereoNet. Download its weights as described in
    [preprocess/mobilestereonet/README_weights.md](preprocess/mobilestereonet/README_weights.md).
 
 ```
