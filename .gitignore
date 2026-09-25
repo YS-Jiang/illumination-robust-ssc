@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.ipynb_checkpoints/
+
+# local data, weights and run outputs
+data/
+ckpts/
+checkpoints/
+packages/
+logs/
+outputs/
+*.ckpt
+*.pth
+*.npy
+*.pkl
+
+.vscode/
+.idea/
+.DS_Store
