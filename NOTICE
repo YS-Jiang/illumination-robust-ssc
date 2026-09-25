@@ -1,0 +1,35 @@
+This repository is released under the Apache License 2.0 (see LICENSE).
+
+It contains, or builds directly on, code from the following projects. Their terms
+continue to apply to the parts derived from them.
+
+  CGFormer            https://github.com/pkqbajng/CGFormer            Apache-2.0
+  OccFormer           https://github.com/zhangyp15/OccFormer          Apache-2.0
+  VoxFormer           https://github.com/NVlabs/VoxFormer             (NVIDIA source-code licence)
+  mmdetection3d       https://github.com/open-mmlab/mmdetection3d     Apache-2.0
+  MobileStereoNet     https://github.com/cogsys-tuebingen/mobilestereonet   Apache-2.0
+  Depth-Anything-V2   https://github.com/DepthAnything/Depth-Anything-V2    Apache-2.0 (code)
+
+The file preprocess/mobilestereonet/ is a copy of MobileStereoNet with local changes to
+prediction.py (sequence-wise output layout and disparity-to-depth conversion). Its own
+LICENSE file is kept alongside it.
+
+
+Model weights are licensed separately from the code
+---------------------------------------------------
+
+Depth-Anything-V2 releases its Small model under Apache-2.0 and its Base, Large and Giant
+models under CC-BY-NC-4.0. This work uses the ViT-Large depth model, so the Depth-Anything-V2
+weights it loads are CC-BY-NC-4.0, that is, non-commercial.
+
+No Depth-Anything-V2 weights are redistributed here. They are downloaded by the user from
+the official repository.
+
+A trained checkpoint of this work contains the Depth-Anything-V2 ViT-Large parameters, so
+that checkpoint inherits the CC-BY-NC-4.0 restriction even though this source code does
+not. The Apache-2.0 licence above applies to the code in this repository, not to any
+checkpoint distributed alongside it.
+
+SemanticKITTI and the KITTI odometry benchmark are distributed by their authors under
+CC BY-NC-SA 4.0. No data from either is redistributed here; only the scripts that read and
+preprocess a local copy.
