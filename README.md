@@ -6,18 +6,19 @@
 
 ## News
 
-- [2026/09]: Accepted by IEEE Transactions on Automation Science and Engineering.
-- [2026/09]: Code and the trained checkpoint are released.
+- [2026/09/25]: Accepted by IEEE Transactions on Automation Science and Engineering.
+- [2026/09/25]: Code, the trained checkpoint and the demonstration video are released.
 
 ## Overview
 
 <p align='center'>
-<img src="./assets/teaser.png" width="720px">
+<img src="./assets/demo.gif" width="760px">
 </p>
 <p align='center'>
-Under clean input both methods reconstruct the scene. Under extreme low light the color-only
-baseline collapses to 3.0 mIoU on the SemanticKITTI validation sequence, while the proposed
-color and grayscale fusion holds 7.7 mIoU.
+One continuous drive over SemanticKITTI sequence 08, with the illumination degradation ramping
+from clean to extreme. The top left panel is what the models see. The proposed fusion is on the
+bottom left and a color-only model trained with the identical augmentation is on the bottom
+right, both scored against the ground truth on the top right.
 </p>
 
 Camera-based semantic scene completion degrades sharply when the illumination is poor. This
@@ -70,7 +71,7 @@ cent, and the last column is the fraction of the clean mIoU that survives.
 
 | Model | Dataset | SC IoU | mIoU | Checkpoint |
 |---|---|---|---|---|
-| Proposed | SemanticKITTI test | 44.96 | 16.98 | https://drive.google.com/file/d/1txU3Eyndc-hj2ecmZesEqF609x9yBQx2/view?usp=sharing |
+| Proposed | SemanticKITTI test | 44.96 | 16.98 | [Google Drive](https://drive.google.com/file/d/1txU3Eyndc-hj2ecmZesEqF609x9yBQx2/view?usp=sharing) |
 
 ```
 last.ckpt   2351192359 bytes
@@ -174,6 +175,7 @@ If this repository is useful for your research, please consider citing the paper
   author={Jiang, Yansong and Zhao, Dezong and Zhang, Li},
   journal={IEEE Transactions on Automation Science and Engineering},
   year={2026},
+  note={Accepted},
   publisher={IEEE}
 }
 ```
