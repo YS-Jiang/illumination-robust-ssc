@@ -70,7 +70,7 @@ cent, and the last column is the fraction of the clean mIoU that survives.
 
 | Model | Dataset | SC IoU | mIoU | Checkpoint |
 |---|---|---|---|---|
-| Proposed | SemanticKITTI test | 44.96 | 16.98 | [Link](<PASTE_DRIVE_LINK>) |
+| Proposed | SemanticKITTI test | 44.96 | 16.98 | https://drive.google.com/file/d/1txU3Eyndc-hj2ecmZesEqF609x9yBQx2/view?usp=sharing |
 
 ```
 last.ckpt   2351192359 bytes
